@@ -17,12 +17,20 @@ This is a Todo List application built with React that allows users to add, edit,
 
    ```sh
    git clone https://github.com/yourusername/todo-list-app.git
-   cd todo-list-app
-   npm install
+## Docker Setup
+
+### Build Docker Image
+    
+To build a Docker image for the Todo List application, run the following command in the project directory:
+```sh
+docker build -t todo-list-app
+```
+        
+
 ## Usage
 1. Start the development server:
    ```sh
-   npm run dev
+   docker run -d -p 5173:5173 todo-list-app
 2. Open your browser and go to `http://localhost:5173`.
 
 ## Components
